@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: Prints the sizes of various types on the computer it is
+ * compiled and run on. The output format matches the given example.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int a;
