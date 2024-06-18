@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point "variable if else or while"
- * return always 0
+ * main - Prints "variable if else or while"
+ * return: 0
  */
-
 int main(void)
 {
 int n;
