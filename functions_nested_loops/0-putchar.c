@@ -1,10 +1,20 @@
 #include "main.h"
 
-void print_alphabet(void)
+/**
+*main - function prints text as output
+*
+*Return:return 0
+*/
+int main(void)
 {
-    char alphabet[27] = "abcdefghijklmnopqrstuvwxyz\n";
-    for (int i = 0; alphabet[i] != '\0'; i++)
-    {
-        _putchar(alphabet[i]);
-    }
+	char school[10] = "_putchar";
+
+	int i;
+
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(school[i]);
+	}
+	_putchar(10);
+	return (0);
 }
