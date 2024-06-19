@@ -1,14 +1,7 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-// the function prototype
-void greet();
+int _putchar(char c);
+void print_alphabet(void);
 
-int main(int argc, char* args[])
-{
-    greet();
-    return 0;
-}
-
-void greet() {
-    printf("Hello world!\n");
-}
+#endif /* MAIN_H */
