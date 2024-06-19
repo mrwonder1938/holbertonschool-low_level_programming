@@ -1,23 +1,24 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_alphabet_x10 - prints alphabet letters ten times
- * 
- * Description: The function uses a loop to print the alphabet
- *              followed by a newline, ten times.
- * 
- * Return: void
- */
+  * print_alphabet_x10 - Make alphabet x10 times
+  *
+  * Return: void
+  */
 void print_alphabet_x10(void)
 {
-    int counter = 0;
-    int letter;
+	char c;
+	int i = 0;
 
-    while (counter++ < 10) // Adjusted to run exactly ten times
-    {
-        for (letter = 'a'; letter <= 'z'; letter++)
-            _putchar(letter);
+	while (i <= 9)
+	{
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
 
-        _putchar('\n'); // Changed 10 to '\n' for clarity
-    }
+		_putchar('\n');
+
+		i++;
+	}
 }
