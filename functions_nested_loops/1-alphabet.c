@@ -1,21 +1,18 @@
-#include <stdio.h>
+#include "holberton.h"
 
-int _putchar(char c)
-{
-    return putchar(c);
-}
-
+/**
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  */
 void print_alphabet(void)
 {
-    char alphabet[27] = "abcdefghijklmnopqrstuvwxyz\n";
-    for (int i = 0; alphabet[i] != '\0'; i++)
-    {
-        _putchar(alphabet[i]);
-    }
-}
+	char c;
 
-int main(void)
-{
-    print_alphabet();
-    return 0;
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+
+	_putchar('\n');
 }
