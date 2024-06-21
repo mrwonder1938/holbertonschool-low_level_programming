@@ -1,21 +1,24 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print  'print_alphabet_x10'
- * Return: 0
+ * print_alphabet_x10 - i print x10 alphabet
+ * Return:void
  */
-void print_alphabet_x10)
-{
-    char c;
-    int i;
 
-    for(i = |1; i <= 10; i++)
-{ 
-    for (c= 'a'; c <= 'z'; c++)
-     {
-            _putchar(c);
-     }
-      _putchar ('/n');
-}
+void print_alphabet_x10(void)
+{
+	int l = 0;
+
+	while (l <= 9)
+
+	{
+		char c = 'a';
+
+		while (c <= 'z')
+
+		_putchar(c++);
+
+		_putchar('\n');
+		(l++);
+	}
 }
