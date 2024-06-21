@@ -1,24 +1,21 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_alphabet_x10 6 make alphebet x10 times
- * return:  void
+ * print_alphabet_x10 - print  'print_alphabet_x10'
+ * Return: 0
  */
-
-void print_alphabet_x10(void)
-
+void print_alphabet_x10)
 {
+    char c;
+    int i;
 
-	char c;
-	int i = 0;
-
-	while (i <= 0)
-	{
-	for (c = 'a'; c <= 'z' ; c++)
-	{
-		_putchar(c);
-
-		_putchar(\'n');
-		i++;
-	}
+    for(i = |1; i <= 10; i++)
+{ 
+    for (c= 'a'; c <= 'z'; c++)
+     {
+            _putchar(c);
+     }
+      _putchar ('/n');
+}
 }
