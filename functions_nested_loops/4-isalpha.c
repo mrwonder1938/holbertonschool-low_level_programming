@@ -1,14 +1,7 @@
-/**
- * _isalpha - checks for alphabetic character
- * @c: the character to be checked (as an ASCII value)
- *
- * Return: 1 if c is a letter, lowercase or uppercase
- *         0 otherwise
- */
-int _isalpha(int c)
-{
-    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-        return 1;
-    else
-        return 0;
+// 4-isalpha.c
+#include "4-isalpha.h"
+#include <ctype.h>
+
+int _isalpha(char c) {
+    return isalpha(c); // Utilizing the standard library isalpha function
 }
