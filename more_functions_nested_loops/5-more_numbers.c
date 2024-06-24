@@ -7,7 +7,7 @@
 void more_numbers(void)
 {
     int i, j;
-    char buffer[21];  // Buffer to hold numbers from 0-14 and newline character
+    char buffer[21]; /* Buffer to hold numbers from 0-14 and newline character */
 
     for (i = 0; i < 10; i++)
     {
@@ -17,12 +17,18 @@ void more_numbers(void)
         {
             if (j > 9)
             {
-                *ptr++ = (j / 10) + '0';  // Tens place
+                *ptr++ = (j / 10) + '0'; /* Tens place */
             }
-            *ptr++ = (j % 10) + '0';  // Units place
+            *ptr++ = (j % 10) + '0'; /* Units place */
         }
 
-        *ptr++ = '\n';  // Newline character
-        write(1, buffer, ptr - buffer);  // Using _putchar only 3 times (actually none directly, relying on write)
+        *ptr++ = '\n'; /* Newline character */
+        
+        /* Print the buffer using _putchar */
+        for (int k = 0; k < ptr - buffer; k++)
+        {
+            _putchar(buffer[k]);
+        }
     }
 }
+Explanation
