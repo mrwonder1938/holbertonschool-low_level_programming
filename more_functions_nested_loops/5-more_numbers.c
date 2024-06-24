@@ -24,11 +24,11 @@ void more_numbers(void)
 
         *ptr++ = '\n'; /* Newline character */
         
-        /* Print the buffer using _putchar */
-        for (int k = 0; k < ptr - buffer; k++)
+        /* Declare k outside the for loop to comply with C89 standard */
+        int k;
+        for (k = 0; k < (ptr - buffer); k++)
         {
             _putchar(buffer[k]);
         }
     }
 }
-Explanation
