@@ -5,3 +5,5 @@
 int _isupper(int c);
 
 /* Other function prototypes if any */
+
+#endif /* MAIN_H */
