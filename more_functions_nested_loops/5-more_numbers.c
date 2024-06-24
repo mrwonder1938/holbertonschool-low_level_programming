@@ -6,7 +6,7 @@
  */
 void more_numbers(void)
 {
-    int i, j;
+    int i, j, k;
     char buffer[21]; /* Buffer to hold numbers from 0-14 and newline character */
 
     for (i = 0; i < 10; i++)
@@ -23,9 +23,7 @@ void more_numbers(void)
         }
 
         *ptr++ = '\n'; /* Newline character */
-        
-        /* Declare k outside the for loop to comply with C89 standard */
-        int k;
+
         for (k = 0; k < (ptr - buffer); k++)
         {
             _putchar(buffer[k]);
