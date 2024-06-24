@@ -7,5 +7,6 @@
  */
 int mul(int a, int b)
 {
-    return a * b;
+	/* Return the result of multiplication */
+	return (a * b);
 }
