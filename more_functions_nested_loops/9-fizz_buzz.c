@@ -46,7 +46,7 @@ void fizzbuzz(void) {
                 buffer[idx--] = temp % 10 + '0';
                 temp /= 10;
             }
-            int j;
+            int j;  // Move declaration to the beginning of the block
             for (j = 0; j < digits; j++) {
                 _putchar(buffer[j]);
             }
