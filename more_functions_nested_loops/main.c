@@ -2,10 +2,7 @@
 
 int main(void)
 {
-	print_square(0);
-	print_square(1);
-	print_square(5);
-	print_square(-3);
-	return (0);
-}
+    fizzbuzz();  // Call the FizzBuzz function
 
+    return 0;
+}

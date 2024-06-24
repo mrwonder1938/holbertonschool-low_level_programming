@@ -1,7 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char c);
-void print_square(int size);
+#include <stdio.h>  // Include standard input/output library
+
+// Function prototype for FizzBuzz function
+void fizzbuzz(void);
 
 #endif /* MAIN_H */
