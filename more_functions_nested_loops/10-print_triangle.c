@@ -20,11 +20,3 @@ void print_triangle(int size)
         }
         _putchar('\n');
     }
-}
-
-int main(void)
-{
-    print_triangle(5);
-    return 0;
-}
-
