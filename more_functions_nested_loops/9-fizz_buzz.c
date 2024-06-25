@@ -28,6 +28,7 @@ void fizzbuzz(void)
 		{
 			/* Buffer to hold digits of i */
 			char buffer[10];
+
 			sprintf(buffer, "%d", i);
 			printf("%s", buffer);
 		}
