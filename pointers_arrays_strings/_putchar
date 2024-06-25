@@ -1,7 +1,6 @@
-// _putchar.h (assuming this header defines the prototype for _putchar)
-#ifndef _PUTCHAR_H
-#define _PUTCHAR_H
+#include <unistd.h>
 
-int _putchar(char c);  // Declaration of _putchar function
-
-#endif  // _PUTCHAR_H
+/* Function to print a character to the standard output */
+int _putchar(char c) {
+    return write(1, &c, 1);
+}
