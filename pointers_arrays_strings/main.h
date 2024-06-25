@@ -3,7 +3,10 @@
 
 #include <stdio.h>
 
+/* Declaration of _putchar function */
+int _putchar(char c);
+
+/* Function prototype for swapping integers */
 void swap_int(int *a, int *b);
-int _putchar(char c); // Declaration of _putchar function
 
 #endif /* MAIN_H */
