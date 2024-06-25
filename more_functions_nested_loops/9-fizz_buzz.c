@@ -8,36 +8,36 @@
  */
 void fizzbuzz(void)
 {
-    int i;
+	int i;
 
-    for (i = 1; i <= 100; i++)
-    {
-        if (i % 3 == 0 && i % 5 == 0)
-        {
-            printf("FizzBuzz");
-        }
-        else if (i % 3 == 0)
-        {
-            printf("Fizz");
-        }
-        else if (i % 5 == 0)
-        {
-            printf("Buzz");
-        }
-        else
-        {
-            /* Buffer to hold digits of i */
-            char buffer[10];
-            sprintf(buffer, "%d", i);
-            printf("%s", buffer);
-        }
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+		}
+		else if (i % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			/* Buffer to hold digits of i */
+			char buffer[10];
+			sprintf(buffer, "%d", i);
+			printf("%s", buffer);
+		}
 
-        if (i != 100)
-        {
-            printf(" ");
-        }
-    }
-    printf("\n");
+		if (i != 100)
+		{
+			printf(" ");
+		}
+	}
+	printf("\n");
 }
 
 /**
@@ -47,6 +47,6 @@ void fizzbuzz(void)
  */
 int main(void)
 {
-    fizzbuzz();
-    return (0);
+	fizzbuzz();
+	return (0);
 }
