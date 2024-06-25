@@ -1,0 +1,7 @@
+// _putchar.h (assuming this header defines the prototype for _putchar)
+#ifndef _PUTCHAR_H
+#define _PUTCHAR_H
+
+int _putchar(char c);  // Declaration of _putchar function
+
+#endif  // _PUTCHAR_H
