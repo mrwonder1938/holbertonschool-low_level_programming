@@ -5,7 +5,9 @@
  * @a: Pointer to the first integer.
  * @b: Pointer to the second integer.
  */
+
 void swap_int(int *a, int *b)
+
 {
     int temp; /* Temporary variable to hold the value during swap */
 
@@ -13,3 +15,4 @@ void swap_int(int *a, int *b)
     *a = *b;   /* Assign the value at address b to address a */
     *b = temp; /* Assign the value in temp to address b */
 }
+
