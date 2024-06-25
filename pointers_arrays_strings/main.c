@@ -1,14 +1,31 @@
-#include <stdio.h>
-#include "main.h"  /* Include the header file where the function prototype is declared */
+#include "main.h"
 
-int main() {
-    int num = 5;
+/**
+ * swap_int - Swaps the values of two integers.
+ * @a: Pointer to the first integer.
+ * @b: Pointer to the second integer.
+ */
+void swap_int(int *a, int *b)
+{
+    int temp; // Temporary variable to hold the value during swap
 
-    printf("Before reset_to_98: %d\n", num);
+    temp = *a; // Store the value at address a in temp
+    *a = *b;   // Assign the value at address b to address a
+    *b = temp; // Assign the value in temp to address b
+}
 
-    reset_to_98(&num);  /* Pass the address of num to the function */
+// Example usage of the swap_int function
+int main(void)
+{
+    int x = 10;
+    int y = 20;
 
-    printf("After reset_to_98: %d\n", num);
+    printf("Before swap: x = %d, y = %d\n", x, y);
+
+    // Call the swap_int function to swap values of x and y
+    swap_int(&x, &y);
+
+    printf("After swap: x = %d, y = %d\n", x, y);
 
     return 0;
 }
