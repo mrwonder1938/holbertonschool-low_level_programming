@@ -1,6 +1,5 @@
-#include <unistd.h>  // Include necessary library for write function
+#include "main.h"
 
-// Function to write a single character to stdout
-void _putchar(char c) {
-    write(1, &c, 1);  // Using the POSIX write function to output the character
+int _putchar(char c) {
+    return putchar(c);
 }
