@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
-void puts2(char *str);  // Prototype for puts2 function
+/* Prototype for puts2 function */
+void puts2(char *str);
 
 #endif /* MAIN_H */
