@@ -3,8 +3,8 @@
 
 #include <stdio.h>  /* Include standard I/O header for putchar */
 
-/* Function prototypes here */
 void _puts(char *str);
-int _putchar(char c);  /* Declaration of _putchar */
+int _putchar(char c);
+void print_rev(char *s);  /* Prototype for the print_rev function */
 
 #endif  /* MAIN_H */

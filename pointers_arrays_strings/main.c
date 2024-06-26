@@ -1,9 +1,15 @@
-#include <stdio.h>
 #include "main.h"
 
-int main(void) {
-    char message[] = "Hello, world!";
-    _puts(message);  // Call to custom _puts function
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    char str[] = "Hello, World!";
+
+    print_rev(str);
 
     return 0;
 }
