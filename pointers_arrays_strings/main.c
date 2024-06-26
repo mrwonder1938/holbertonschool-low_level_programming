@@ -1,17 +1,10 @@
 #include "main.h"
 
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
 int main(void)
 {
     char str[] = "Hello, World!";
+    
+    puts2(str);  // Output: Hlo ol!
 
-    printf("Original string: %s\n", str);
-    rev_string(str);
-    printf("Reversed string: %s\n", str);
-
-    return 0;
+    return (0);
 }

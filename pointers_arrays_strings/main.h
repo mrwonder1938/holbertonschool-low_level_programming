@@ -1,11 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>  /* Include standard I/O header for putchar */
+#include <stdio.h>
 
-void _puts(char *str);
-int _putchar(char c);
-void print_rev(char *s);  /* Prototype for the print_rev function */
-void rev_string(char *s);  /* Prototype for the rev_string function */
+void puts2(char *str);  // Prototype for puts2 function
 
-#endif  /* MAIN_H */
+#endif /* MAIN_H */
