@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
-int main() {
-    char str[] = "Hello, world!";
-    int length = _strlen(str);
-    
-    printf("Length of the string '%s' is: %d\n", str, length);
+int main(void) {
+    char message[] = "Hello, world!";
+    _puts(message);  // Call to custom _puts function
 
     return 0;
 }
