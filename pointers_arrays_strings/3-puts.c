@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include "main.h"  // Include any necessary headers here
 
+// Function to print a string followed by a newline to stdout
 void _puts(char *str) {
-    /* Iterate through each character in the string until we reach '\0' */
     while (*str != '\0') {
-        putchar(*str);  putchar(*str);  /* Print the current character */
-        str++;         // Move to the next character in the string
+        putchar(*str);    /* Print the current character */
+        str++;            /* Move to the next character in the string */
     }
-    putchar('\n');     // Print a newline character after printing the string
+    putchar('\n');         /* Print a newline character at the end */
 }
