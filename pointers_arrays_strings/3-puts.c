@@ -1,10 +1,19 @@
-#include "main.h"  // Include any necessary headers here
+#include "main.h"
 
-// Function to print a string followed by a newline to stdout
-void _puts(char *str) {
-    while (*str != '\0') {
-        putchar(*str);    /* Print the current character */
-        str++;            /* Move to the next character in the string */
-    }
-    putchar('\n');         /* Print a newline character at the end */
+/**
+ * _puts- that prints a string
+ *@str: it is the result
+ */
+
+void _puts(char *str)
+{
+	int longueur = 0;
+
+	while (str[longueur] != '\0')
+	{
+	_putchar(str[longueur]);
+	longueur++;
+	}
+
+	_putchar('\n');
 }
