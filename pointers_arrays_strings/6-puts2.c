@@ -11,8 +11,8 @@ void puts2(char *str)
     while (str[i] != '\0')
     {
         if (i % 2 == 0)
-            _putchar(str[i]);
+            _putchar(str[i]);  // Call _putchar to print character
         i++;
     }
-    _putchar('\n');
+    _putchar('\n');  // Print newline at the end
 }
