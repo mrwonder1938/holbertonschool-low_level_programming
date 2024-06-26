@@ -16,4 +16,3 @@ void puts2(char *str)
     }
     _putchar('\n'); /* Print newline at the end */
 }
-
