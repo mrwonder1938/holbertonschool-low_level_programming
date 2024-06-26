@@ -1,12 +1,9 @@
-#include <stdio.h>  // Include standard I/O header for putchar
+#ifndef MAIN_H
+#define MAIN_H
 
-#include "main.h"   // Include your own header file for function prototypes
+#include <stdio.h>  /* Include standard I/O header for putchar */
 
-// Function to print a string followed by a newline to stdout
-void _puts(char *str) {
-    while (*str != '\0') {
-        putchar(*str);    /* Print the current character */
-        str++;            /* Move to the next character in the string */
-    }
-    putchar('\n');         /* Print a newline character at the end */
-}
+// Function prototypes here
+void _puts(char *str);
+
+#endif  /* MAIN_H */
