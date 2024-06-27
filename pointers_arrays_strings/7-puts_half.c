@@ -9,7 +9,7 @@ void puts_half(char *str)
     int length = 0;
     int i, start;
 
-    // Manually compute the length of the string
+    /* Manually compute the length of the string */
     while (str[length] != '\0')
     {
         length++;
