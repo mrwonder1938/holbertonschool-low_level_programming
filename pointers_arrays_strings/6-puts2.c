@@ -1,8 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
-int main(void)
+/**
+ * puts2 - prints part of a string
+ * @str: string to be printed
+ *
+ * Return: void
+ **/
+void puts2(char *str)
 {
-char str[] = "Programming is like building a multilingual puzzle";
-puts(str);
-return (0);
+int i = 0;
+while (str[i] != '\0')
+{
+if (i % 2 == 0)
+_putchar(str[i]);
+i++;
+}
+
+_putchar('\n');
 }
