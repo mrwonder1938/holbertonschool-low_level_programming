@@ -1,12 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
-    int arr[] = {1, 2, 3, 4, 5};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    char src[] = "Hello, World!";
+    char dest[50];
 
-    printf("Array: ");
-    print_array(arr, size);
+    _strcpy(dest, src);
+
+    printf("Copied string: %s\n", dest);
 
     return 0;
 }

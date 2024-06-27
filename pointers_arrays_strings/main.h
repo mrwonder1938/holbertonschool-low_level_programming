@@ -1,12 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-
-/* Declaration of _putchar function */
-int _putchar(char c);
-
-/* Declaration of print_array function */
-void print_array(int *a, int n);
+/* Declaration of _strcpy function */
+char *_strcpy(char *dest, char *src);
 
 #endif /* MAIN_H */
