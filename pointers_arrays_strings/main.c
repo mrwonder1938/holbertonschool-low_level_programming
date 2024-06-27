@@ -1,15 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 
 int main(void)
 {
-    char *str1 = "Hello, world!";
-    char *str2 = "123456789";
-    char *str3 = "EvenLength";
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-    puts_half(str1);  // Expected output: "world!"
-    puts_half(str2);  // Expected output: "6789"
-    puts_half(str3);  // Expected output: "Length"
+    printf("Array: ");
+    print_array(arr, size);
 
     return 0;
 }
