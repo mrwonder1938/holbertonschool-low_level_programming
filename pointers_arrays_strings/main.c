@@ -1,17 +1,41 @@
-#include <stdio.h>
 #include "main.h"
 
-int main(void) {
-    // Test cases
-    char str1[] = "Hello, world!";
-    char str2[] = "";
-    char str3[] = "This is a test string.";
-    char str4[] = "1234567890";
+// Implementation of _strcat function
+char *_strcat(char *dest, char *src) {
+    char *ptr = dest;
+    
+    // Move ptr to the end of dest
+    while (*ptr != '\0') {
+        ptr++;
+    }
+    
+    // Append src to dest
+    while (*src != '\0') {
+        *ptr = *src;
+        ptr++;
+        src++;
+    }
+    
+    // Add null terminator to the end of concatenated string
+    *ptr = '\0';
+    
+    // Return a pointer to the concatenated string (dest)
+    return dest;
+}
 
-    printf("Length of '%s' is %d\n", str1, _strlen(str1));  // Output: 13
-    printf("Length of '%s' is %d\n", str2, _strlen(str2));  // Output: 0
-    printf("Length of '%s' is %d\n", str3, _strlen(str3));  // Output: 21
-    printf("Length of '%s' is %d\n", str4, _strlen(str4));  // Output: 10
-
+// Example usage
+int main() {
+    char dest[50] = "Hello, ";
+    char src[] = "world!";
+    
+    printf("Before concatenation:\n");
+    printf("dest: %s\n", dest);
+    printf("src: %s\n", src);
+    
+    _strcat(dest, src);
+    
+    printf("\nAfter concatenation:\n");
+    printf("dest: %s\n", dest);
+    
     return 0;
 }

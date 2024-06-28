@@ -1,7 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _strlen(char *s);
-int _putchar(char c);
+#include <stdio.h>
 
-#endif /* MAIN_H */
+// Function prototype for _strcat
+char *_strcat(char *dest, char *src);
+
+#endif /* MAIN_H *
