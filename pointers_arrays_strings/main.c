@@ -1,41 +1,20 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h> // for printf
 
-// Implementation of _strcat function
-char *_strcat(char *dest, char *src) {
-    char *ptr = dest;
-    
-    // Move ptr to the end of dest
-    while (*ptr != '\0') {
-        ptr++;
-    }
-    
-    // Append src to dest
-    while (*src != '\0') {
-        *ptr = *src;
-        ptr++;
-        src++;
-    }
-    
-    // Add null terminator to the end of concatenated string
-    *ptr = '\0';
-    
-    // Return a pointer to the concatenated string (dest)
-    return dest;
-}
+int main(void)
+{
+    char dest[50] = "Hello ";
+    char src[] = "World!";
+    int n = 7; // Maximum number of characters to concatenate
 
-// Example usage
-int main() {
-    char dest[50] = "Hello, ";
-    char src[] = "world!";
-    
-    printf("Before concatenation:\n");
+    printf("Before _strncat:\n");
     printf("dest: %s\n", dest);
     printf("src: %s\n", src);
-    
-    _strcat(dest, src);
-    
-    printf("\nAfter concatenation:\n");
+
+    _strncat(dest, src, n);
+
+    printf("\nAfter _strncat:\n");
     printf("dest: %s\n", dest);
-    
-    return 0;
+
+    return (0);
 }
