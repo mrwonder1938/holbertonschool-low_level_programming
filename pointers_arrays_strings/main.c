@@ -3,17 +3,16 @@
 
 int main(void)
 {
-    char dest[50] = "Hello ";
-    char src[] = "World!";
-    int n = 7; // Maximum number of characters to concatenate
+    char dest[50];
+    char src[] = "Hello, World!";
+    int n = 10; // Maximum number of characters to copy
 
-    printf("Before _strncat:\n");
-    printf("dest: %s\n", dest);
+    printf("Before _strncpy:\n");
     printf("src: %s\n", src);
 
-    _strncat(dest, src, n);
+    _strncpy(dest, src, n);
 
-    printf("\nAfter _strncat:\n");
+    printf("\nAfter _strncpy:\n");
     printf("dest: %s\n", dest);
 
     return (0);
