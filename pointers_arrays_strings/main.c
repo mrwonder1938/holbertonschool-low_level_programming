@@ -3,13 +3,13 @@
 
 int main(void)
 {
-    char str[] = "Hello, World!";
-    
+    char str[] = "hello, world! this is a test. let's see if it works.";
+
     printf("Original string: %s\n", str);
 
-    string_toupper(str);
+    cap_string(str);
 
-    printf("Uppercase string: %s\n", str);
+    printf("Capitalized string: %s\n", str);
 
     return (0);
 }
