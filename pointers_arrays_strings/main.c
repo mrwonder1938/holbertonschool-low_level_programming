@@ -1,16 +1,33 @@
 #include "holberton.h"
 #include <stdio.h> // for printf
 
+void print_array(int *a, int n)
+{
+    int i;
+
+    for (i = 0; i < n; i++)
+    {
+        printf("%d", a[i]);
+        if (i < n - 1)
+        {
+            printf(", ");
+        }
+    }
+    printf("\n");
+}
+
 int main(void)
 {
-    char str1[] = "Hello";
-    char str2[] = "Hello";
-    char str3[] = "World";
-    char str4[] = "hello";
+    int array[] = {1, 2, 3, 4, 5};
+    int n = sizeof(array) / sizeof(array[0]);
 
-    printf("Comparing '%s' and '%s': %d\n", str1, str2, _strcmp(str1, str2));
-    printf("Comparing '%s' and '%s': %d\n", str1, str3, _strcmp(str1, str3));
-    printf("Comparing '%s' and '%s': %d\n", str1, str4, _strcmp(str1, str4));
+    printf("Original array:\n");
+    print_array(array, n);
+
+    reverse_array(array, n);
+
+    printf("Reversed array:\n");
+    print_array(array, n);
 
     return (0);
 }
