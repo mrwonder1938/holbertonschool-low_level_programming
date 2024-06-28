@@ -3,17 +3,14 @@
 
 int main(void)
 {
-    char dest[50];
-    char src[] = "Hello, World!";
-    int n = 10; // Maximum number of characters to copy
+    char str1[] = "Hello";
+    char str2[] = "Hello";
+    char str3[] = "World";
+    char str4[] = "hello";
 
-    printf("Before _strncpy:\n");
-    printf("src: %s\n", src);
-
-    _strncpy(dest, src, n);
-
-    printf("\nAfter _strncpy:\n");
-    printf("dest: %s\n", dest);
+    printf("Comparing '%s' and '%s': %d\n", str1, str2, _strcmp(str1, str2));
+    printf("Comparing '%s' and '%s': %d\n", str1, str3, _strcmp(str1, str3));
+    printf("Comparing '%s' and '%s': %d\n", str1, str4, _strcmp(str1, str4));
 
     return (0);
 }
