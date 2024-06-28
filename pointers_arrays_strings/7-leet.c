@@ -8,21 +8,26 @@
 
 char *leet(char *s)
 {
-	int i;
+    int i, j;
+    char leet_map[10][2] = {
+        {'a', '4'}, {'A', '4'},
+        {'e', '3'}, {'E', '3'},
+        {'o', '0'}, {'O', '0'},
+        {'t', '7'}, {'T', '7'},
+        {'l', '1'}, {'L', '1'}
+    };
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		while (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
-	}
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        for (j = 0; j < 10; j++)
+        {
+            if (s[i] == leet_map[j][0])
+            {
+                s[i] = leet_map[j][1];
+                break;
+            }
+        }
+    }
 
-	return (s);
+    return (s);
 }
