@@ -3,13 +3,14 @@
 
 int main(void)
 {
-    char str[] = "Hello, World! Let's convert this to 1337.";
+    char str1[] = "Hello";
+    char str2[] = "Hello";
+    char str3[] = "Hell";
+    char str4[] = "World";
 
-    printf("Original string: %s\n", str);
-
-    leet(str);
-
-    printf("Leet encoded string: %s\n", str);
+    printf("Comparing \"%s\" and \"%s\": %d\n", str1, str2, _strcmp(str1, str2)); // should return 0
+    printf("Comparing \"%s\" and \"%s\": %d\n", str1, str3, _strcmp(str1, str3)); // should return a positive number
+    printf("Comparing \"%s\" and \"%s\": %d\n", str1, str4, _strcmp(str1, str4)); // should return a negative number
 
     return (0);
 }
