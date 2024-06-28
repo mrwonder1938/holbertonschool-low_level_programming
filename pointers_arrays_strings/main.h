@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Declaration of _strcpy function */
-char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
+int _putchar(char c);
 
 #endif /* MAIN_H */
