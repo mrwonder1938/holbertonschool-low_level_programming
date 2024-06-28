@@ -3,15 +3,15 @@
 
 int main(void) {
     // Test cases
-    char str1[] = "   -42";
-    char str2[] = "4193 with words";
-    char str3[] = "words and 987";
-    char str4[] = "-91283472332";
+    char str1[] = "Hello, world!";
+    char str2[] = "";
+    char str3[] = "This is a test string.";
+    char str4[] = "1234567890";
 
-    printf("%d\n", _atoi(str1));  // Output: -42
-    printf("%d\n", _atoi(str2));  // Output: 4193
-    printf("%d\n", _atoi(str3));  // Output: 0
-    printf("%d\n", _atoi(str4));  // Output: -2147483648 (or INT_MIN)
+    printf("Length of '%s' is %d\n", str1, _strlen(str1));  // Output: 13
+    printf("Length of '%s' is %d\n", str2, _strlen(str2));  // Output: 0
+    printf("Length of '%s' is %d\n", str3, _strlen(str3));  // Output: 21
+    printf("Length of '%s' is %d\n", str4, _strlen(str4));  // Output: 10
 
     return 0;
 }
