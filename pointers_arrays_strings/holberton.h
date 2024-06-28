@@ -2,7 +2,7 @@
 #define HOLBERTON_H
 
 /* Function prototypes */
-char *cap_string(char *str);
+char *leet(char *s);
 int _putchar(char c);
 
 #endif /* HOLBERTON_H */

@@ -3,13 +3,13 @@
 
 int main(void)
 {
-    char str[] = "hello, world! this is a test. let's see if it works.";
+    char str[] = "Hello, World! Let's convert this to 1337.";
 
     printf("Original string: %s\n", str);
 
-    cap_string(str);
+    leet(str);
 
-    printf("Capitalized string: %s\n", str);
+    printf("Leet encoded string: %s\n", str);
 
     return (0);
 }
